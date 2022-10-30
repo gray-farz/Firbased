@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <!--    <com.google.android.material.card.MaterialCardView-->
+    <!--        android:id="@+id/materialCardView"-->
+    <!--        android:layout_width="200dp"-->
+    <!--        android:layout_height="200dp"-->
+    <!--        android:layout_marginStart="10dp"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:layout_marginEnd="10dp"-->
+    <!--        app:cardCornerRadius="25dp"-->
+    <!--        app:cardElevation="10dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        >-->
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            >-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/imageProfile"-->
+    <!--                android:layout_width="500dp"-->
+    <!--                android:layout_height="500dp"-->
+    <!--                android:scaleType="centerCrop"-->
+    <!--                app:srcCompat="@drawable/profile_image" />-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/imgCamera"-->
+    <!--                android:layout_width="50dp"-->
+    <!--                android:layout_height="50dp"-->
+    <!--                android:src="@drawable/camera_white"-->
+    <!--                android:background="@drawable/circle"-->
+    <!--                android:layout_alignBottom="@+id/imageProfile"-->
+    <!--                android:padding="8dp"-->
+    <!--                android:layout_margin="5dp"-->
+    <!--                />-->
+    <!--        </RelativeLayout>-->
+
+    <!--    </com.google.android.material.card.MaterialCardView>-->
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:drawableRight="@drawable/username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="10dp"
+        android:drawableRight="@drawable/key_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/back_button"
+        android:text="ثبت نام"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputEditText2"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/signup" />
+</androidx.constraintlayout.widget.ConstraintLayout>
